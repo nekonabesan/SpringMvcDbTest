@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+   <class entity-name="TrnProcessingPrice" name="jp.co,example.entity.TrnProcessingPrice" table="trn_processing_price">
+       <id name="seqno" type="long">
+           <column name="seqno" precision="18" scale="0" />
+           <generator class="assigned" />
+       </id>
+       <!--<property name="name" type="string">
+           <column name="NAME" length="50" />
+    </property>-->
+       <one-to-one fetch="join" name="thicknessId" entity-name="MstThickness" column="thickness_id" update="false" insert="false"/>
+   </class>
+</hibernate-mapping>
