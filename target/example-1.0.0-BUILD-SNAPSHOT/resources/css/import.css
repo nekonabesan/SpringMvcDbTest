@@ -1,7 +1,0 @@
-@charset "utf-8";
-/*CLR_DEFAULT_STYLE*/
-@import url(reset.css);
-/*STYLE適用*/
-@import url(base.css);
-/*custom*/
-@import url(custom.css);
